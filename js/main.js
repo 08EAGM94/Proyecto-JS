@@ -48,7 +48,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
         $('#posts').append(post);
       });
     //slider
-    $(window).on("load", function(){
+    
+  }
+  $(window).on("load", function(){
       $(function(){
         $('.bxslider').bxSlider({
             mode: 'fade',
@@ -57,8 +59,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         });
       });
     }); 
-  }
-
   
   
   //Selector de tema
