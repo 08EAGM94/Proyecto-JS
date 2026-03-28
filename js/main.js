@@ -1,4 +1,4 @@
-$(document).ready(function(){
+document.addEventListener("DOMContentLoaded", ()=>{
   
   //slider 
   if(window.location.href.indexOf('index') > -1){ 
