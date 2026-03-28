@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", ()=>{
+$(window).on("load", function(){
   
   
      
@@ -120,17 +120,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
 
   }
-});
 
-//slider 
-  $(window).on("load", function(){
-    if(window.location.href.indexOf('index') > -1){ 
-      $(function(){
-        $('.bxslider').bxSlider({
-            mode: 'fade',
-            captions: true,
-            slideWidth: 1200
-        });
+  //slider 
+  if(window.location.href.indexOf('index') > -1){ 
+    $(function(){
+      $('.bxslider').bxSlider({
+          mode: 'fade',
+          captions: true,
+          slideWidth: 1200
       });
-    } 
-  });
+    });
+  }
+});
