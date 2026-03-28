@@ -49,18 +49,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
       });
   }
 
-  //slider 
-  $(window).on("load", function(){
-    if(window.location.href.indexOf('index') > -1){ 
-      $(function(){
-        $('.bxslider').bxSlider({
-            mode: 'fade',
-            captions: true,
-            slideWidth: 1200
-        });
-      });
-    } 
-  });
+  
   
   //Selector de tema
   var styles = $('#theme');
@@ -132,3 +121,16 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
   }
 });
+
+//slider 
+  $(window).on("load", function(){
+    if(window.location.href.indexOf('index') > -1){ 
+      $(function(){
+        $('.bxslider').bxSlider({
+            mode: 'fade',
+            captions: true,
+            slideWidth: 1200
+        });
+      });
+    } 
+  });
