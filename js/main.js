@@ -47,6 +47,16 @@ $(document).ready(function(){
         `;
         $('#posts').append(post);
       });
+    //slider
+    $(window).on("load", function(){
+      $(function(){
+        $('.bxslider').bxSlider({
+            mode: 'fade',
+            captions: true,
+            slideWidth: 1200
+        });
+      });
+    }); 
   }
 
   
@@ -119,16 +129,5 @@ $(document).ready(function(){
       scrollToTopOnError: true
     });
 
-  }
-
-  //slider 
-  if(window.location.href.indexOf('index') > -1){ 
-    $(function(){
-      $('.bxslider').bxSlider({
-          mode: 'fade',
-          captions: true,
-          slideWidth: 1200
-      });
-    });
   }
 });
