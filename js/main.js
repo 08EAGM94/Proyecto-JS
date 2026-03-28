@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", ()=>{
   
   
-     
+  const bxslider = document.querySelector(".bxslider");  
   //Posts
-  if(window.location.href.indexOf('index') > -1){
+  if(bxslider != null){
 
       var posts = [
         {
@@ -47,9 +47,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
         `;
         $('#posts').append(post);
       });
-    //slider
-    
   }
+  //slider
   $(window).on("load", function(){
       $(function(){
         $('.bxslider').bxSlider({
