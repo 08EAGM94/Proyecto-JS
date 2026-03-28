@@ -1,15 +1,7 @@
 document.addEventListener("DOMContentLoaded", ()=>{
   
-  //slider 
-  if(window.location.href.indexOf('index') > -1){ 
-      $(function(){
-        $('.bxslider').bxSlider({
-            mode: 'fade',
-            captions: true,
-            slideWidth: 1200
-        });
-      });
-  }    
+  
+     
   //Posts
   if(window.location.href.indexOf('index') > -1){
 
@@ -56,6 +48,20 @@ document.addEventListener("DOMContentLoaded", ()=>{
         $('#posts').append(post);
       });
   }
+
+  //slider 
+  $(window).on("load", function(){
+    if(window.location.href.indexOf('index') > -1){ 
+      $(function(){
+        $('.bxslider').bxSlider({
+            mode: 'fade',
+            captions: true,
+            slideWidth: 1200
+        });
+      });
+    } 
+  });
+  
   //Selector de tema
   var styles = $('#theme');
   $('#toGreen').click(function(){
